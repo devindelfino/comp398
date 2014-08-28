@@ -1,23 +1,68 @@
 class Node(object):
-	#State object
+	"""Stores a single database entry.
+
+	Represents a database entry within a linked list. Specified to 
+	store a name and abbreviation of a USA Territory as cargo.
+
+	Attributes:
+       name = the name of the state
+       abbreviation = the postal abbreviation
+       next = the next node object in the linked list
+	"""	
+
 	def __init__(self, name, abb, next=None):
+		"""Initializes Node class with territory name and postal abbreviation."""
+
 		self.name = name
 		self.abbreviation = abb
 		self.next = next
 
 	def printNode(self):
+		"""Displays cargo of a Node object.
+
+		Args:
+			None
+
+		Returns:
+			None
+		"""
+
 		print "--------------------------"
 		print "State/Territory: " + self.name
 		print "Abbreviation: " + self.abbreviation
 		print "--------------------------"
 
 class LinkedList(object):
-	#List of States
+	"""Stores an entire flat file database in the form of Node objects.
+
+	Uses Node objects to store a flat file database. Specified to store
+	the flat file database containing USA Territory names and abbreviations.
+
+	Attributes:
+		size = the number of entries within the Linked List
+		head = the first entry (Node object) in the Linked List
+	"""
+
 	def __init__(self):
+		"""Initializes LinkedList class by setting the size as 0 and the head Node to None."""
+
 		self.size = 0
 		self.head = None
 
 	def append(self, n, a):
+		"""Appends a new Node object to the end of the Linked List instance.
+
+		Creates a new instance of the Node class and inserts it at the very end
+		of the Linked List instance.
+
+		Args:
+			n = the name of the territory/state
+			a = the postal abbreviation of the territory/state
+
+		Returns:
+			None
+		"""
+
 		new_node = Node(n, a)
 
 		if(self.head == None):

@@ -2,6 +2,8 @@ class Node(object):
 	"""Stores a single database entry.
 
 	Represents a database entry within a linked list.
+	Specified to store a state's name, population, electoral votes,
+	penrose measure, and equitability measure as cargo.
 
 	Attributes:
        state = the name of the state
@@ -31,7 +33,16 @@ class Node(object):
 
 
 class LinkedList(object):
-	
+	"""Stores an entire flat file database in the form of Node objects.
+
+	Uses Node objects to store a flat file database. This Linked List class is 
+	specified to store the flat file database containing USA Territory names and abbreviations.
+
+	Attributes:
+		size = the number of entries within the Linked List
+		head = the first entry (Node object) in the Linked List
+	"""
+
 	def __init__(self):
 		self.size = 0
 		self.head = None
