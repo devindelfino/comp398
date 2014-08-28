@@ -1,5 +1,6 @@
 Homework Assignment 1
 =====================
+*Devin Delfino*
 
 Objective
 ---------
