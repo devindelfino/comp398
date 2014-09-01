@@ -1,38 +1,38 @@
 # State Abbreviation
 
-import LinkedListAbb
+import linked_list
 
 def main():
-	filename = "territories.csv"
+	file_name = "territories.csv"
 
-	flatFile = LinkedListAbb.LinkedList()
+	flat_file = linked_list.LinkedList()
 
 	# ---------- Shows functionality for the POPULATE and DISPLAY functions -----------------------------
 
 	print "\nTesting the Display function on the empty list..."
-	flatFile.display() 
+	flat_file.display() 
 
 	print "\nTesting the Populate function on the empty list from the flat file database 'territories.csv'..."
-	flatFile.populate(filename)
+	flat_file.populate(file_name)
 
 	print "\nTesting the Display function on the populated list..."
-	flatFile.display()
+	flat_file.display()
 
 	# ---------------------------------------------------------------------------------------------------
 
 	# ---------- Shows functionality for the SEARCH function -----------------------------
 
 	print "\nTesting the Search function on 'Massachusetts'..."
-	flatFile.search("Massachusetts")
+	flat_file.search("Massachusetts")
 
 	print "\nTesting the Search function on 'California'..."
-	flatFile.search("California")
+	flat_file.search("California")
 
 	print "\nTesting the Search function on 'Arizona'..."
-	flatFile.search("Arizona")
+	flat_file.search("Arizona")
 
 	print "\nTesting the Search function on 'District of Colombia'..."
-	flatFile.search("District of Columbia")
+	flat_file.search("District of Columbia")
 
 	# ---------------------------------------------------------------------------------------------------
 
