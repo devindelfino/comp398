@@ -29,7 +29,7 @@ class Node(object):
 
 		print "--------------------------"
 		print "State/Territory: " + self.name
-		print "Abbreviation: " + self.abbreviation
+		print "Abbreviation: " + self.abbreviation.rstrip()
 		print "--------------------------"
 
 class LinkedList(object):
@@ -76,7 +76,19 @@ class LinkedList(object):
 			temp.next = new_node
 
 	def search(self, query):
-		
+		"""Searches for a specific query in the linked list
+
+		Iterates through the entries in the linked list for a specific query.
+		Prints out the entry if it is found.
+
+		Args:
+			query = the name of the state/territory that is being searched for
+
+		Returns:
+			A Boolean, True  - the search item was found
+					   False - the search item was not found
+		"""
+
 		temp = self.head
 		while(temp != None):
 			if(temp.name == query):
@@ -90,7 +102,18 @@ class LinkedList(object):
 
 
 	def populate(self, filename):
-		# Only a completely empty Linked List can be populated
+		"""Populates an empty linked list with a flat file database
+
+		Only populates an empty linked list.
+
+		Args:
+			filename = the name of the file that is to be read into the linked list
+
+		Returns:
+			A Boolean, True  - the search item was found
+					   False - the search item was not found
+		"""
+
 		if(self.head != None):
 			print "This Linked List is already populated. Please try again with an empty list."
 		else:
@@ -102,6 +125,15 @@ class LinkedList(object):
 			f.close()
 
 	def display(self):
+		"""Displays each entry within the linked list 
+
+		Args:
+			None
+
+		Returns:
+			None
+		"""
+
 		if(self.head == None):
 			print "\n\n--------------------------"
 			print "This Linked List is empty."
