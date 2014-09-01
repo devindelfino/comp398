@@ -269,9 +269,22 @@ State/Territory: Arizona
 Abbreviation: AZ
 --------------------------
 
-Testing the Search function on 'District of Colombia'...
-District of Columbia found!
+Testing the Search function on 'Guam'...
+Guam found!
 --------------------------
-State/Territory: District of Columbia
-Abbreviation: DC
+State/Territory: Guam
+Abbreviation: GU
+--------------------------
+
+Testing the Search function on 'Whale Lab'...
+Whale Lab NOT found!
+
+Testing the Append function by adding the Whale Lab to the list
+Adding 'Whale Lab' as a USA Territory...
+
+Testing the Search function on 'Whale Lab'...
+Whale Lab found!
+--------------------------
+State/Territory: Whale Lab
+Abbreviation: WHL
 --------------------------

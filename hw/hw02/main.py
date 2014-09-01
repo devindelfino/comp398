@@ -31,10 +31,26 @@ def main():
 	print "\nTesting the Search function on 'Arizona'..."
 	flat_file.search("Arizona")
 
-	print "\nTesting the Search function on 'District of Colombia'..."
-	flat_file.search("District of Columbia")
+	print "\nTesting the Search function on 'Guam'..."
+	flat_file.search("Guam")
+
+	print "\nTesting the Search function on 'Whale Lab'..."
+	flat_file.search("Whale Lab")
 
 	# ---------------------------------------------------------------------------------------------------
 
+	# ---------- Shows functionality for the APPEND function -----------------------------
+
+	print "\nTesting the Append function by adding the Whale Lab to the list"
+
+	print "Adding 'Whale Lab' as a USA Territory..."
+
+	# line taken from original flat file database
+	flat_file.append("Whale Lab", "WHL")
+
+	print "\nTesting the Search function on 'Whale Lab'..."
+	flat_file.search("Whale Lab")
+
+	# -------------------------------------------------
 if __name__ == '__main__':
 	main()
