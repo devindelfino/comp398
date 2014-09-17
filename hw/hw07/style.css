@@ -1,0 +1,72 @@
+html {
+	font-family: 'Neuton', serif;
+	font-size: 50px;
+}
+
+#strongtext {
+	font-weight: 800;
+}
+
+#align_left {
+	text-align: left;
+}
+
+#align_center {
+	text-align: center;
+}
+
+#align_right {
+	text-align: right;
+}
+
+#box, #box2 {
+	border: 2px solid;
+	width: 800px;
+	height: 350px;
+}
+
+#line-height-large {
+	line-height: 150px;
+}
+
+#line-height-small {
+	line-height: 22px;
+}
+
+#wider, #wider2, #wider3 {
+	width: 400px;
+}
+
+#indent-small {
+	text-indent: 20px;
+}
+
+#indent-medium {
+	text-indent: 90px;
+}
+
+#indent-large {
+	text-indent: 200px;
+}
+
+#left-border {
+	border-left: 2px dashed;
+	width: 800px;
+	height: 350px;
+}
+
+#supers {
+	vertical-align: super;
+}
+
+#subs {
+	vertical-align: sub;
+}
+
+#ltr {
+	direction: ltr;
+}
+
+#rtl {
+	direction: rtl;
+}

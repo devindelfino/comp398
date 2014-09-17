@@ -1,0 +1,51 @@
+<!Doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>CSS Text</title>
+    
+    <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+<div id="impress">
+
+<div class="step slide" id="box" data-x="0" data-y="0">
+        <p id="align_left">Text Align</p>
+        <p id="align_center">Text Align</p>
+        <p id="align_right">Text Align</p>
+</div>
+
+<div class="step slide" id="wider" data-x="0" data-y="1000">
+          <p id="line-height-large">Sometimes, the lines of text get into arguments and refuse to be near each other...</p>
+  </div>
+
+<div class="step slide" data-x="0" data-y="2000">
+          <p id="line-height-small">And, in cold weather, text tends to huddle together to stay warm...</p>
+  </div>
+
+  <div class="step slide" id="left-border" data-x="2000" data-y="0">
+          <p id="indent-medium">Indenting. Indenting </p>
+          <p id="indent-small">Indenting. Indenting </p>
+          <p id="indent-large">Indenting. Indenting </p>
+  </div>
+
+  <div class="step slide" id="wider2" data-x="4000" data-y="0">
+          <p>E<span id="supers">V</span>E <span id="subs">R</span>Y<span id="supers">B</span>O<span id="subs">D</span>Y <span id="supers">D</span>O <span id="subs">T</span>H<span id="supers">E</span> W<span id="subs">A</span>V<span id="supers">E</span>!
+          </p>
+  </div>
+
+
+
+</div>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+
+</html>
