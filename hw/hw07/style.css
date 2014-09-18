@@ -97,7 +97,7 @@ code {
 #vshadow {
 	letter-spacing: 15px;
 	color: #ff0000;
-	text-shadow: 10px 0 #FF9999;
+	text-shadow: 0px 10 #FF9999;
 }
 
 #hshadow{
