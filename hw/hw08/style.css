@@ -9,6 +9,10 @@ html {
 	font-weight: 800;
 }
 
+.vert-align {
+	font-size: 30px;
+}
+
 .titleintro {
 	width: 500px;
 	text-align: center;
@@ -99,6 +103,12 @@ html {
 	padding: 20px 100px;
 }
 
+#vertimage {
+	padding: 20px 100px;
+	display: block;
+	float: left;
+}
+
 code {
 	font-family: 'Neuton', serif;
 	font-size: 30px;
@@ -184,7 +194,12 @@ code {
 	text-align: right;
 }
 
-#box, #box2 {
+#align_just {
+	text-align: justify;
+	width: 750px;
+}
+
+.box {
 	border: 2px solid;
 	width: 800px;
 	height: 350px;
@@ -194,8 +209,12 @@ code {
 	line-height: 150px;
 }
 
-#line-height-small {
-	line-height: 22px;
+#line-height-half {
+	line-height: 50%;
+}
+
+#line-height-num {
+	line-height: 2;
 }
 
 #wider, #wider2, #wider3 {
@@ -203,14 +222,16 @@ code {
 }
 
 #indent-small {
+	/* values can be expressed as px, pt, cm, em */
 	text-indent: 20px;
 }
 
 #indent-medium {
-	text-indent: 90px;
+	text-indent: 75%;
 }
 
 #indent-large {
+	/* values can also be inherit or initial */
 	text-indent: 200px;
 }
 
@@ -228,6 +249,23 @@ code {
 	vertical-align: sub;
 }
 
+#align-top {
+	text-align: center;
+	vertical-align: top;
+}
+
+#align-middle {
+	vertical-align: middle; 
+	vertical-align: 50%;
+	vertical-align: text-bottom;
+	vertical-align: text-top;
+	vertical-align: -10px;
+}
+
+#align-bottom {
+	text-align: center;
+	vertical-align: bottom;
+}
 #ltr {
 	direction: ltr;
 }
