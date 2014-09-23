@@ -127,7 +127,9 @@ code {
 	width: 500px;
 	text-align: center;
 	line-height: 5px;
-	margin-left: 150px;
+	margin-left: 50px;
+	margin-top: 20px;
+	padding: 0px;
 	border:2px solid #CC6600;
 	border-radius: 100px;
 	border-left: transparent;
@@ -137,6 +139,13 @@ code {
 .burger {
 	margin-left: -100px;
 	margin-right: -100px;
+}
+
+#burgerpicture {
+	float: right;
+	display: block;
+	margin-right: -200px;
+	margin-top: -300px;
 }
 
 #overline {
@@ -165,17 +174,30 @@ code {
 #vshadow {
 	letter-spacing: 15px;
 	color: #ff0000;
-	text-shadow: 0 10px #FF9999;
+	text-shadow: 0 10px 0 #FF9999;
 }
 
 #hshadow{
 	letter-spacing: 5px;
 	color: #660000;
-	text-shadow: 10px 0 #CC9966;
+	text-shadow: 10px 0 5px #CC9966;
 }
 
-#text-shadow {
-	margin-left: 50px;
+
+.direction-override {
+	line-height: 40px;
+	font-size: 30px;
+	float: right;
+	margin-right: -450px;
+	margin-top: -330px;
+}
+
+#direction {
+	text-shadow: -2px 0 #FF9933, 0 1px #FF9933, 1px 0 #FF9933, 0 -1px #FF9933;
+	font-weight: bold;
+	color: #FFFF99;
+	direction: rtl;
+	unicode-bidi: bidi-override;
 }
 
 #strongtext {
@@ -304,4 +326,17 @@ code {
 
 #inline_please {
 	min-width: 800px;
+}
+
+#hebrew {
+  font-size: 40px;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: right;
+  margin-top: 10px;
+}
+
+#hebrewcode {
+	padding-top: 40px;
+	margin-left: 250px;
 }
