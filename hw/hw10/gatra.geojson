@@ -1,33 +1,27 @@
 { "type": "FeatureCollection",
     "features": [
       { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
-        "properties": {"prop0": "value0"}
-        },
-      { "type": "Feature",
         "geometry": {
-          "type": "LineString",
+          "type": "MultiLineStrin",
           "coordinates": [
-            [102.0, 0.0], [103.0, 1.0], [104.0, 0.0], [105.0, 1.0]
+            [41.966664, -71.185887], [41.965089, -71.185687], [41.965153, -71.186916], [41.965935, -71.186953], [41.966478, -71.187146]
             ]
           },
         "properties": {
-          "prop0": "value0",
-          "prop1": 0.0
+          "Howard St.": "Wheaton College"
           }
         },
       { "type": "Feature",
-         "geometry": {
-           "type": "Polygon",
-           "coordinates": [
-             [ [100.0, 0.0], [101.0, 0.0], [101.0, 1.0],
-               [100.0, 1.0], [100.0, 0.0] ]
-             ]
-         },
-         "properties": {
-           "prop0": "value0",
-           "prop1": {"this": "that"}
-           }
-         }
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [41.966478, -71.187146]
+          ]
+        },
+      "properties": {
+        "prop0": "value0",
+        "prop1": 0.0
+        }
+      },
        ]
      }
