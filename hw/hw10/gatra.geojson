@@ -11,17 +11,5 @@
           "Howard St.": "Wheaton College"
           }
         },
-      { "type": "Feature",
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [41.966478, -71.187146]
-          ]
-        },
-      "properties": {
-        "prop0": "value0",
-        "prop1": 0.0
-        }
-      },
        ]
      }
