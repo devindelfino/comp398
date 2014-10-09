@@ -19,7 +19,7 @@
   		"geometry": {"type": "Point", "coordinates": [-71.21999399999999, 42.032205]},
   		"properties": {"name": "Mansfield MBTA"	
   					}
-		}
+		},
     {
       "type": "Feature",
       "properties": {},
