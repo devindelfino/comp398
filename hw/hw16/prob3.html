@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lazy Caterer's Sequence</title>
+</head>
+<body>
+<h1>Lazy Caterer's Sequence</h1>
+
+<button onclick="promptUser()">Enter a Value</button>
+
+<p id="limit"></p>
+<p id="sequence"></p>
+
+<script>
+function promptUser() {
+    var n_value = prompt("Please enter a value for n:", 100);
+    
+    if (n_value != null) {
+        document.getElementById("limit").innerHTML =
+        "n = " + n_value;
+    }
+    var seq = "<ol>";
+    for(var val=0; val<n_value; val++) {
+    	temp = val*(val+1)/2 + 1;
+    	seq += "<li>" + temp + "</li>";
+    }
+
+    document.getElementById("sequence").innerHTML = seq;
+}
+</script>
+
+</body>
+</html>

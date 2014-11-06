@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kittens Galore!</title>
+</head>
+
+<style type="text/css">
+    .kittenpic {
+        border: dashed;
+        border-radius: 25px;
+    }
+
+    .padded {
+        padding: 20px;
+        /*float: right;*/
+        display: inline-block;
+    }
+
+    .main { 
+        position: relative;
+        width: 1000px;
+        height: 800px;
+        background-color: orange;
+        position: relative;">
+    }
+
+    h1 { 
+       font-family: sans-serif;
+       color: yellow;
+       position: absolute; 
+       font-size: 64px;
+       top: 10%; 
+       left: 27%; 
+       width: 100%; 
+    }
+</style>
+
+<body>
+<div class="main">
+    <table>
+    <tr>
+           <div id="row1"></div>
+    </tr>
+    <tr>
+           <div id="row2"></div>
+    </tr>
+    <tr>
+           <div id="row3"></div>
+    </tr>
+    </table>
+
+</div>
+<h1>COMP 398</h1>
+
+</body>
+
+<script type="text/javascript">
+    var row = "<td>";
+    var rotation = 0;
+    for(var i = 0; i<4; i++) {
+        row += "<div class=\"padded\"><img class=\"kittenpic\"src=\"./kitten.jpg\" style=\"-webkit-transform: rotate(" + rotation + "deg);\"></div>";
+        rotation += 30;
+    }
+
+    row += "</td>";
+    document.getElementById("row1").innerHTML = row;
+
+    var row = "<td>";
+    for(var i = 0; i<4; i++) {
+        row += "<div class=\"padded\"><img class=\"kittenpic\"src=\"./kitten.jpg\" style=\"-webkit-transform: rotate(" + rotation + "deg);\"></div>";
+        rotation += 30;
+    }
+
+    row += "</td>";
+    document.getElementById("row2").innerHTML = row;
+
+    var row = "<td>";
+    for(var i = 0; i<4; i++) {
+        if(i==3) {
+            rotation += 30;
+        }
+        row += "<div class=\"padded\"><img class=\"kittenpic\"src=\"./kitten.jpg\" style=\"-webkit-transform: rotate(" + rotation + "deg);\"></div>";
+        rotation += 30;
+    }
+
+    row += "</td>";
+    document.getElementById("row3").innerHTML = row;
+</script>
+</html>
