@@ -8,10 +8,8 @@ The domain of my data is Wheaton College Professors. Each professor has informat
 
 Collections
 -----------
-* *Department* - The department to which the professor belongs.
-* *Research Interests* - Topics of research and interests.
+* *Background* - Includes the professor's name, the department to which he/she belongs, his/her research interests, and basic contact information.
 * *Office Hours* - Includes days of the week and time of day.
 * *Office Location* - Includes the building, floor, and room number.
 * *Current Courses* - Includes a list of the courses currently being taught by the professor.
-* *Contact Information* - Contact information for the professor.
 
