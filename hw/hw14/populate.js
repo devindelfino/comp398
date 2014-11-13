@@ -50,6 +50,7 @@ MongoClient.connect("mongodb://giovanni:mozzarella@ds047930.mongolab.com:47930/d
   	console.dir('Clean Up, Clean Up, Everybody Everywhere...')
   }
 
+  console.dir(events);
   collection.insert(profs, {w:1}, function(err, result) {});
 
   console.dir('Mission Complete.');
