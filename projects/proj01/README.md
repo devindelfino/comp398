@@ -1,7 +1,7 @@
 Project 01
 ==========
 ###Devin Delfino
-*Partner: Tyler Kickham*
+*Partner: [Tyler Kickham](https://github.com/tkicks)*
 
 Domain Name
 -----------
