@@ -1,11 +1,12 @@
-Project 01
+Project 02
 ==========
 ###Devin Delfino
 *Partners: [Andrew Shelton](https://github.com/dshelts) and [Zevi Rubin](https://github.com/rubinz)*
 
 Campus Events API
 -----------
-[CampusEventsAPI](https://github.com/dshelts/CampusEventsApi)
+* The application can be found at [immense-thicket-1665.herokuapp.com](https://immense-thicket-1665.herokuapp.com)
+* Campus Events API [Code](https://github.com/dshelts/CampusEventsApi)
 
 Summary
 -------
